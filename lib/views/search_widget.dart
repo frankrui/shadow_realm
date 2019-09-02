@@ -6,8 +6,18 @@ class SearchWidget extends StatefulWidget {
 }
 
 class _SearchWidgetState extends State<SearchWidget> {
+  final _formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container(
+        alignment: Alignment.center,
+        child: Form(
+          key: _formKey,
+          child: Column(
+              children: []
+          ),
+        )
+    );
   }
 }
